@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+@keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tesla-block {
+    position: relative;
+}
+
+.tesla-car {
+    height: 400px;
+}
+
+.foot-1 {
+    height: 65px;
+    position: absolute;
+    background-color: transparent;
+    transform: translate(-255px, 195px);
+}
+
+.foot-2 {
+    height: 65px;
+    position: absolute;
+    transform: translate(-531px, 195px);
+}
+
+.block-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-block p,
+.second-screen p,
+.first-screen p {
+    color: #707070;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: start;
+}
+
+.up,
+.low {
+    all: unset;
+    cursor: pointer;
+}
+
+.up {
+    margin: -100px 0 0 150px;
+    transform: translate(26px, -43px);
+
+}
+
+.low {
+    transform: translate(176px, -40px);
+}
+
+.bottom-block {
+   text-align: start;
+   margin: 50px 0 0 0;
+   display: flex;
+   gap: 80px;
+}
+
+.third-bb .low {
+    transform: translate(75px, -40px);
+}
+
+.third-bb .up {
+    transform: translate(-75px, -43px);
+}
+
+.toggle-container {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 34px;
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  label {
+    margin-top: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 25px;
+    border-radius: 34px;
+    background-color: #8b8888;
+    cursor: pointer;
+  }
+  input[type="checkbox"]:checked + label {
+    background-color: #4200FF;
+  }
+  label:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 26px;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    background-color: #fff;
+    transition: 0.2s;
+  }
+  input[type="checkbox"]:checked + label:after {
+    transform: translateX(19px);
+  }
+
+  .fourth-bb {
+    display: flex;
+    gap: 30px;
+    margin-left: -90px;
+  }
+
+  .p-text {
+    width: 140px;
+  }
