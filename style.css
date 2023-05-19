@@ -15,10 +15,30 @@
     }
 }
 
+@keyframes rot-2 {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(1080deg);
+  }
+}
+
+
 .container {
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
+}
+
+.foot-container {
+  width: 70px;
+  height: 70px;
+  transform: rotate(360deg);
+  display: flex;
+  margin-left: 325px;
+  margin-top: -210px;
 }
 
 .tesla-block {
@@ -33,13 +53,22 @@
     height: 65px;
     position: absolute;
     background-color: transparent;
-    transform: translate(-255px, 195px);
-}
+    top: 0;
+    left: 0;
+    animation: .7s linear 0s normal none infinite running rot;
+  }
 
 .foot-2 {
     height: 65px;
-    position: absolute;
-    transform: translate(-531px, 195px);
+    position: relative;
+    animation: .7s linear 0s normal none infinite running rot;
+    top: 0px;
+    left: 0px;
+    margin-left: 275px;
+}
+
+.rot-2 {
+  animation: .7s linear 0s normal none infinite running rot-2 !important;
 }
 
 .block-2 {
@@ -74,7 +103,7 @@
 
 .bottom-block {
    text-align: start;
-   margin: 50px 0 0 0;
+   margin: 80px 0 0 0;
    display: flex;
    gap: 80px;
 }
