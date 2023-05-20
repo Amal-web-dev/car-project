@@ -16,6 +16,8 @@
 <body>
     <div class="container">
 
+        <div class="tesla-screen">
+
         <div class="tesla-block">
             <img src="./img/tesla.png" alt="" class="tesla-car">
             <div class="foot-container">
@@ -59,7 +61,7 @@
 
         <div class="fourth-bb">
 
-        <div class="text-container">
+        <div class="text-container t-2">
             <p>Кондиционер</p>
             <div class="toggle-container">
                 <input class="toggle1" name="toggle1" type="checkbox" id="toggle1">
@@ -67,7 +69,7 @@
             </div>
         </div>
 
-        <div class="text-container p-text">
+        <div class="text-container p-text t-2">
             <p>Версия Long Range</p>
             <div class="toggle-container">
                 <input class="toggle2 name="toggle2" type="checkbox" id="toggle2">
@@ -75,7 +77,7 @@
             </div>
         </div>
 
-        <div class="text-container p-text">
+        <div class="text-container p-text t-2">
             <p>Вид автомобиля</p>
             <div class="toggle-container">
                 <input name="toggle3" type="checkbox" id="toggle3">
@@ -87,12 +89,44 @@
 
         
         </div>
+    </div>
 
 
+ <div class="modal-tesla">
+        <div class="modal-tesla-block">
+            <div class="tesla-img-block">
+                <img src="./img/black.png" class="black">
+            </div>
+        </div>
 
+        <div class="screen-2">
+            <div class="first-screen">
+                <p>Запас хода</p>
+                <h1><span id="benzin">750</span> км</h1>
+            </div>
+            <div class="second-screen">
+                <p>Цена</p>
+                <h1>$<span id="cost">89,990</span></h1>
+            </div>
+        </div>
 
+        <div class="btn-color-block">
+            <p class="p-color">Цвет салона</p>
+            <button class="color-1"></button>
+            <button class="color-2"></button>
+            <button class="color-3"></button>
+        </div>
+
+        <div class="text-container p-text tog">
+            <p class="p-color-2">Вид автомобиля</p>
+            <div class="toggle-container">
+                <input name="toggle4" type="checkbox" id="toggle4">
+                <label for="toggle4"></label>
+            </div>
+        </div>   
 
     </div>
+</div>
 
     <script src="./script.js"></script>
 </body>

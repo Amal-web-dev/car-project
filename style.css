@@ -5,6 +5,10 @@
     font-family: 'Inter', sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 @keyframes rot {
     0% {
         transform: rotate(0deg);
@@ -14,17 +18,6 @@
         transform: rotate(360deg);
     }
 }
-
-@keyframes rot-2 {
-  0% {
-      transform: rotate(0deg);
-  }
-
-  100% {
-      transform: rotate(1080deg);
-  }
-}
-
 
 .container {
     max-width: 1000px;
@@ -164,4 +157,80 @@
 
   .p-text {
     width: 140px;
+  }
+
+  .black {
+    height: 400px;
+  }
+
+  .screen-2 {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+  }
+
+  .color-1,
+  .color-2,
+  .color-3 {
+    height: 30px;
+    width: 30px;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+
+  .color-1 {
+    background-color: #262626;
+  }
+
+  .color-2 {
+    background-color: #EFEFEF;
+    margin-left: 5px;
+  }
+
+  .color-3 {
+    background-color: #E6DDD0;
+    margin-left: 5px;
+  }
+
+  .btn-color-block {
+    margin: 50px 150px 0 0;
+  }
+
+  .p-color {
+    color: #707070;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+  }
+
+  .tog {
+    margin: -58px 0 50px 550px;
+  }
+
+  .p-color-2 {
+    color: #707070;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0 0 -10px -25px;
+  }
+
+  .modal-tesla {
+    display: none;
+    margin-top: 50px;
+  }
+
+  .tesla-animation {
+    scale: 5;
+    transition: .7s;
+  }
+
+  .opac {
+    opacity: 0;
+    display: none;
+  }
+
+  .screen-2 {
+    margin-top: 30px;
   }
